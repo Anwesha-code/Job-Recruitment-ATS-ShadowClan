@@ -1,6 +1,11 @@
 """Phase 4.6 — Optimized Phase 4.5"""
 from __future__ import annotations
-import sys, os, time, json, csv, pickle
+import sys
+import os
+import time
+import json
+import csv
+import pickle
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.ranking.rrf_ranker import compute_rrf_scores
@@ -122,7 +127,7 @@ if __name__ == "__main__":
             serializable.append(s)
         json.dump(serializable, f, indent=2, default=str)
 
-    print(f"\nResults:")
+    print("\nResults:")
     print(f"  Runtime: {runtime}s (vs Phase 4.5: {P45_RUNTIME}s)")
     print(f"  Score spread: {metrics['score_spread']} (vs Phase 4.5: {P45_SPREAD})")
     print(f"  Specialists: {metrics['retrieval_specialist_pct']}% (vs Phase 4.5: {P45_SPECIALISTS}%)")
@@ -247,4 +252,4 @@ if __name__ == "__main__":
     with open("outputs/phase46_vs_phase45.json", "w", encoding="utf-8") as f:
         json.dump(report_json, f, indent=2)
 
-    print(f"\nReports written to outputs/phase46_report.md and outputs/phase46_vs_phase45.md")
+    print("\nReports written to outputs/phase46_report.md and outputs/phase46_vs_phase45.md")

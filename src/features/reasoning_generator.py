@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Dict, Any, List
+from typing import Dict, Any
 
 
 def generate_reasoning(candidate: Dict[str, Any], rank: int, final_score: float) -> str:
