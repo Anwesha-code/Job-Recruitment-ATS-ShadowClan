@@ -18,6 +18,7 @@ dmypy.json
 
 # Environment
 .env
+.venv
 .env.local
 .env.*
 

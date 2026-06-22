@@ -4,13 +4,15 @@ Usage:
     python run_pipeline.py --candidates Data/candidates.jsonl --jd Data/job_description.txt
 """
 from __future__ import annotations
-import sys, os, time, json, argparse
+import sys
+import os
+import time
+import argparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from scripts.phase45_pipeline import phase45_pipeline
 from scripts.phase46_optimization import run_phase46, validate, write_submission, load_full
-from scripts.phase46_release_freeze import validate_submission
 
 
 DEFAULT_CANDIDATES = "Data/candidates.jsonl"
@@ -95,13 +97,13 @@ def main():
     print("=" * 60)
     print(f"Pipeline complete in {total_time:.2f}s")
     print("=" * 60)
-    print(f"Outputs:")
-    print(f"  outputs/phase46_submission.csv")
-    print(f"  outputs/phase46_top100.json")
-    print(f"  outputs/phase46_report.md")
-    print(f"  outputs/phase46_vs_phase45.md")
-    print(f"  outputs/phase46_submission_audit.md")
-    print(f"  release_v110/ (after freeze)")
+    print("Outputs:")
+    print("  outputs/phase46_submission.csv")
+    print("  outputs/phase46_top100.json")
+    print("  outputs/phase46_report.md")
+    print("  outputs/phase46_vs_phase45.md")
+    print("  outputs/phase46_submission_audit.md")
+    print("  release_v110/ (after freeze)")
 
 
 if __name__ == "__main__":
