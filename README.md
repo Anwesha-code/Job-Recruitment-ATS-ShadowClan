@@ -1,4 +1,5 @@
 # RedRobe Candidate Ranking System
+Deployed website link : https://job-recruitment-ats-shadowclan-tvyxedntrfgtsp3bgp36ke.streamlit.app/
 
 [![CI](https://github.com/redrobe/candidate-ranking/actions/workflows/ci.yml/badge.svg)](https://github.com/redrobe/candidate-ranking/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
