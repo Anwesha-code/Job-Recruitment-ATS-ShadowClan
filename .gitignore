@@ -37,11 +37,11 @@ Data/candidate_schema.json
 Data/sample_candidates.json
 
 # Pipeline outputs (generated)
-outputs/*.csv
-outputs/*.json
-outputs/*.pkl
-outputs/*.md
-outputs/*.html
+# outputs/*.csv
+# outputs/*.json
+# outputs/*.pkl
+# outputs/*.md
+# outputs/*.html
 
 # Archives (research, not production)
 archive/
